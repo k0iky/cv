@@ -1,96 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Rizki</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-light py-5">
+
+    <div class="container">
+        <!-- Kartu Utama CV -->
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4 p-md-5">
+
+                <!-- Layout 2 Kolom (Kiri: Profil, Kanan: Detail) -->
+                <div class="row g-4">
+
+                    <!-- Kolom Kiri (Lebar 4/12) -->
+                    <div class="col-md-4 border-end-md pe-md-4">
+                        <div class="text-center mb-4">
+                            <!-- Placeholder Foto Profil -->
+                            <img src="\Assets\Profil.jpeg" class="rounded-circle img-thumbnail mb-3" alt="Foto Profil">
+                            <h1 class="h3 fw-bold mb-1">Rizki Pratama</h1>
+
+                        </div>
+
+                        <hr>
+
+                        <!-- Kontak -->
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-3"><i class="bi bi-person-lines-fill me-2"></i>Kontak</h5>
+                            <ul class="list-unstyled text-secondary small">
+                                <li class="mb-2"><i class="bi bi-envelope me-2"></i>thenextrilexman@gmail.com</li>
+                                <li class="mb-2"><i class="bi bi-phone me-2"></i>+62 821-6554-7997</li>
+                                <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Medan, Indonesia</li>
+                                <li class="mb-2"><i class="bi bi-instagram me-2"></i><a href="https://www.instagram.com/koiky25/"
+                                        target="_blank" class="text-decoration-none">Instagram</a></li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <!-- Keahlian -->
+                        <div>
+                            <h5 class="fw-bold mb-3"><i class="bi bi-gear-fill me-2"></i>Keahlian</h5>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-primary">Ms.Office Word & Excel</span>
+                                <span class="badge bg-secondary">Basic HTML & CSS</span>
+                                <span class="badge bg-success">Troubleshooting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan (Lebar 8/12) -->
+                    <div class="col-md-8 ps-md-4">
+
+                        <!-- Tentang Saya -->
+                        <section class="mb-4">
+                            <h4 class="fw-bold text-primary border-bottom pb-2 mb-3">
+                                <i class="bi bi-person-badge me-2"></i>Tentang Saya
+                            </h4>
+                            <p class="text-secondary">
+                            <ul>
+                                <li>Tanggal Lahir : 25 Juni 1997</li>
+                                <li>Alamat : JL.Sidobakti Gg.Sidobakti 2</li>
+                                <li>Jenis Kelamin : Laki-Laki</li>
+                                <li>Status : Belum Menikah</li>
+                            </ul>
+                            </p>
+                        </section>
+
+                        <!-- Pengalaman Kerja -->
+                        <section class="mb-4">
+                            <h4 class="fw-bold text-primary border-bottom pb-2 mb-3">
+                                <i class="bi bi-briefcase me-2"></i>Pengalaman Kerja
+                            </h4>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="fw-bold mb-0">WANCA TECH SOLUTION</h6>
+                                    <span class="badge bg-light text-dark border">Mar 2014 - Jul 2014</span>
+                                </div>
+                                <p class="small text-muted mb-1">Technician Support</p>
+                                <ul class="small text-secondary ps-3">
+                                    <li>Membantu dalam proses perbaikan Peralatan Komunikasi Terutama Komputer & Laptop.
+                                    </li>
+                                    <li>Melayani Pelanggan yang datang serta menanyakan kendala pada barang yang ingin
+                                        diperbaiki.</li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="fw-bold mb-0">GALAXY 88</h6>
+                                    <span class="badge bg-light text-dark border">Apr 2018 - Apr 2019</span>
+                                </div>
+                                <p class="small text-muted mb-1">Cashier & Customer Service</p>
+                                <ul class="small text-secondary ps-3">
+                                    <li>Melayani ransaksi customer cash in & cash out.
+                                    </li>
+                                    <li>Memberikan solusi dari kendala customer melalui livechat.</li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="fw-bold mb-0">SUKSES MAJU BERSAMA</h6>
+                                    <span class="badge bg-light text-dark border">May 2019 - Sep 2025</span>
+                                </div>
+                                <p class="small text-muted mb-1">Multiple Role</p>
+                                <ul class="small text-secondary ps-3">
+                                    <li>Cashier : Melayani ransaksi customer cash in & cash out.
+                                    </li>
+                                    <li>Customer Service : Memberikan solusi dari kendala customer melalui livechat.</li>
+                                    <li>Supervisor : Memantau keadaan lapangan dan memastikan operational berjalan dengan baik.</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Proyek & Portofolio -->
+                        <section class="mb-4">
+                            <h4 class="fw-bold text-primary border-bottom pb-2 mb-3">
+                                <i class="bi bi-code-slash me-2"></i>Proyek Teknis
+                            </h4>
+
+                            <div class="card bg-light border-0 p-3 mb-2">
+                                <h6 class="fw-bold mb-1">Manajemen Bandwidth & Network Setup</h6>
+                                <p class="small text-secondary mb-0">
+                                    Mengkonfigurasi MikroTik dan Access Point untuk manajemen alokasi kecepatan
+                                    data dan pemisahan trafik jaringan lokal secara efisien. (Pemakaian Pribadi)
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Pendidikan / Pelatihan -->
+                        <section>
+                            <h4 class="fw-bold text-primary border-bottom pb-2 mb-3">
+                                <i class="bi bi-mortarboard me-2"></i>Pendidikan
+                            </h4>
+                            <div>
+                                <h6 class="fw-bold mb-0">SDN ALUE SEULEMAK ACEH TIMUR</h6>
+                                <h6 class="fw-bold mb-0">SMP PEMBANGUN MEDAN</h6>
+                                <h6 class="fw-bold mb-0">SMK YPK MEDAN</h6>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
